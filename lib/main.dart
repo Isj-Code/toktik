@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:toktik/config/app_theme.dart';
+import 'package:toktik/presentation/providers/discover_provider.dart';
+import 'package:toktik/presentation/screens/discover/discover_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -7,15 +11,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Material App Bar'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+            lazy:
+                false, // ? Hacemos que cargue el Provider cuando arranca la App
+            create: (_) => DiscoverProvider()..loadNextPage())
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: AppTheme().getTheme(),
+        title: 'TokTik',
+        home: const DiscoverScreen(),
       ),
     );
   }
