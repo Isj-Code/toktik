@@ -8,6 +8,7 @@
 - Gradiente
 - Reutilización de Widgets
 - Stack y Positioned
+- Datasource & Repository 
 
 Para poder usar el ejemplo hay que agregar 7 videos en mp4, nombrados del número 1 al 7
 
