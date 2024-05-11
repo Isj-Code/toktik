@@ -1,16 +1,19 @@
-# toktik
+# TokTik - Curso DevTalles
 
-A new Flutter project.
+## En este ejemplo se hace uso de:
 
-## Getting Started
+- Provider
+- Custom Widgets
+- VideoPlayer
+- Gradiente
+- Reutilización de Widgets
+- Stack y Positioned
 
-This project is a starting point for a Flutter application.
+Para poder usar el ejemplo hay que agregar 7 videos en mp4, nombrados del número 1 al 7
 
-A few resources to get you started if this is your first Flutter project:
+**Emulado en Pixel 8**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![img1](assets/screenshot/screen01.png)
+![img2](assets/screenshot/screen02.png)
+![img3](assets/screenshot/screen03.png)
+![img4](assets/screenshot/screen04.png)
